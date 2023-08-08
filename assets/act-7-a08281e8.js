@@ -1,0 +1,73 @@
+const e=`#section Act 7
+{waypoint|2_7_town} #The Bridge Encampment
+➞ {enter|2_7_1} #The Broken Bridge
+#ifdef LEAGUE_START
+    Follow the road, look for the broken {waypoint}
+    Find and take {quest_text|Silver Locket}
+#endif
+➞ {enter|2_7_2} #The Crossroads
+Get {waypoint_get}
+Head {dir|135} ➞ {enter|2_7_3} #The Fellshrine Ruins
+Follow the road ➞ {enter|2_7_4} #The Crypt
+#ifdef LEAGUE_START
+    Complete {trial}
+    Get {crafting}
+#endif
+Find {generic|Sarcophagus} to next floor
+Find and take {quest_text|Maligaro's Map}
+{logout}
+{waypoint|2_7_2} #The Crossroads
+Head {dir|315} ➞ {enter|2_7_5_1} #The Chamber of Sins Level 1
+Get {crafting}
+Get {waypoint_get}
+Activate {quest_text|Map Device} with {quest_text|Maligaro's Map}
+➞ {enter|2_7_5_map} #Maligaro's Sanctum
+➞ {arena|Maligaro's Workshop}, kill {kill|Maligaro, the Artist}, take {quest_text|Black Venom}
+{logout}
+Hand in {quest|a7q2} #Essence of the Artist
+#ifdef LEAGUE_START
+    Hand in {quest|a7q5} #The Silver Locket
+#endif
+{waypoint|2_7_5_1} #The Chamber of Sins Level 1
+Hand in {quest|a7q3}, take {quest_text|Obsidian Key} #Web of Secrets
+Go in same direction as {waypoint}
+➞ {enter|2_7_5_2} #The Chamber of Sins Level 2
+#ifdef LEAGUE_START
+    Complete {trial}
+    Get {crafting}
+#endif
+Open {generic|Secret Passage} ➞ {enter|2_7_6} #The Den
+➞ {enter|2_7_7} #The Ashen Fields
+Head {dir|225} ➞ {arena|The Forest Encampment}, kill {kill|Greust, Lord of the Forest}
+➞ {enter|2_7_8} #The Northern Forest
+{waypoint|2_7_town} #The Bridge Encampment
+Hand in {quest|a7q1} #The Master of a Million Faces
+{waypoint|2_6_8} #Prisoner's Gate
+Go down the ledge next to the road
+➞ {arena|Valley of the Fire Drinker}, kill {kill|Abberath, the Cloven One}
+{portal|use}
+Hand in {quest|a6q7} #The Cloven One
+{waypoint|2_7_8} #The Northern Forest
+➞ {enter|2_7_10} #The Causeway
+Get {crafting}
+Find and take {quest_text|Kishara's Star}
+➞ {enter|2_7_11} #The Vaal City
+Find {waypoint_get}
+{waypoint|2_7_8} #The Northern Forest
+➞ {enter|2_7_9} #The Dread Thicket
+Find and take 7x{quest_text|Firefly}
+Get {crafting}
+➞ {arena|Den of Despair}, kill {kill|Gruthkul, Mother of Despair}
+{portal|use}
+Hand in {quest|a7q9} #Queen of Despair
+Hand in {quest|a7q6} #Kishara's Star
+{waypoint|Labyrinth_Airlock} #Aspirants' Plaza
+{ascend|cruel}
+Get {crafting|2_Labyrinth_boss_3}
+{waypoint|2_7_11} #The Vaal City
+Hand in {quest|a7q7} #Lighting the Way
+➞ {enter|2_7_12_1} #The Temple of Decay Level 1
+➞ {enter|2_7_12_2} #The Temple of Decay Level 2
+Get {crafting}
+➞ {arena|Arakaali's Web}, kill {kill|Arakaali, Spinner of Shadows}
+`;export{e as default};

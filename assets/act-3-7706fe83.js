@@ -1,0 +1,79 @@
+const e=`#section Act 3
+➞ {enter|1_3_1} #The City of Sarn
+Help and talk to {generic|Clarissa}
+➞ {enter|1_3_town} #The Sarn Encampment
+Head {dir|0} ➞ {enter|1_3_2} #The Slums
+➞ {enter|1_3_3_1} #The Crematorium
+#ifdef LEAGUE_START
+    Complete {trial}
+#endif
+Find and kill {kill|Piety}, take {quest_text|Tolman's Bracelet}
+Get {crafting}
+{logout}
+Talk to {generic|Clarissa}, take {quest_text|Sewer Keys}
+Hand in {quest|a3q1} #Lost in Love
+Head {dir|0} ➞ {enter|1_3_2} #The Slums
+➞ {enter|1_3_10_1} #The Sewers
+Find 1x{quest_text|Platinum Bust}
+Get {waypoint_get}
+Find 2x{quest_text|Platinum Bust}
+➞ {enter|1_3_5} #The Marketplace
+Get {waypoint_get}
+#ifdef LEAGUE_START
+    Look around nearby ➞ {enter|1_3_6} #The Catacombs
+    Complete {trial}
+    Get {crafting}
+#endif
+{logout}
+Hand in {quest|a3q11} #Victario's Secrets
+{waypoint|1_3_5} #The Marketplace
+Search {dir|0} ➞ {enter|1_3_7} #The Battlefront
+Head {dir|315} get {waypoint_get}
+Head {dir|225} take {quest_text|Ribbon Spool}
+Head {dir|45} ➞ {enter|1_3_8_1} #The Solaris Temple Level 1
+➞ {enter|1_3_8_2} #The Solaris Temple Level 2
+➞ {arena|Eternal Laboratory}, get {crafting}
+{waypoint|1_3_7} #The Battlefront
+Head {dir|315} ➞ {enter|1_3_9} #The Docks
+Find and take {quest_text|Thaumetic Sulphite}
+{logout}
+{waypoint|1_3_8_2} #The Solaris Temple Level 2
+Talk to {generic|Lady Dialla}
+Hand in {quest|a3q4} #The Ribbon Spool
+Hand in {quest|a3q5} #Fiery Dust, take {quest_text|Infernal Talc}
+{waypoint|1_3_10_1} #The Sewers
+Burn the {quest_text|Undying Blockage}
+Get {crafting}
+➞ {enter|1_3_13} #The Ebony Barracks
+Get {waypoint_get}
+Head {dir|315} kill {kill|General Gravicius}
+➞ {enter|1_3_14_1} #The Lunaris Temple Level 1
+➞ {enter|1_3_14_2} #The Lunaris Temple Level 2
+Find and kill {kill|Piety}, take {quest_text|Tower Key}
+Get {crafting}
+{logout}
+Hand in {quest|a3q9} #Piety's Pets
+Hand in {quest|a3q8} #Sever the Right Hand
+{waypoint|1_3_13} #The Ebony Barracks
+Head {dir|45} ➞ {enter|1_3_15} #The Imperial Gardens
+Follow the road, get {waypoint_get}
+#ifdef LEAGUE_START
+    Head {dir|0} complete {trial}
+    Get {crafting}
+    {logout}
+    {waypoint|1_3_15} #The Imperial Gardens
+#endif
+#ifdef LIBRARY
+    Head {dir|315} ➞ {enter|1_3_17_1} #The Library
+    Get {waypoint_get}
+    Find {generic|Loose Candle} ➞ {enter|1_3_17_2} #The Archives
+    Find 4x{quest_text|Golden Page}
+    {logout}
+    {waypoint|1_3_17_1} #The Library
+    Hand in {quest|a3q12} #A Fixture of Fate
+    {waypoint|1_3_15} #The Imperial Gardens
+#endif
+➞ {enter|1_3_18_1} #The Sceptre of God
+➞ {enter|1_3_18_2} #The Upper Sceptre of God
+➞ {arena|Tower Rooftop}, Kill {kill|Dominus, High Templar}
+`;export{e as default};
